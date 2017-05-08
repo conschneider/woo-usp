@@ -18,7 +18,7 @@ function wcusp_add_content () {
     //First USP  
     $my_first_usp = '<div class="product-usp-block">
                     	<div class="usp-image">
-                    		<i class="' . $wcusp_options_front['icon1'] . '"></i>
+                    		<i style="color:' . $wcusp_options['wcusp_icon_color'] . '" class="' . $wcusp_options_front['icon1'] . '"></i>
                     	</div>
                     	<div class="usp-title">
                     		<span> ' . $wcusp_options['usp1'] . ' </span> 
