@@ -50,7 +50,16 @@ add_action( 'wp_enqueue_scripts', 'wcusp_frontend_icon_picker_scripts' );
 * enqueue color picker
 ******************************/
 
-add_action( 'admin_enqueue_scripts', 'wcusp_add_color_picker' );
+function color_picker_assets($hook_suffix) {
+    // $hook_suffix to apply a check for admin page.
+    wp_enqueue_style( 'wp-color-picker' );
+    //wp_enqueue_script( 'my-script-handle', plugins_url('my-script.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
+//}
+	wp_enqueue_script( 'my-script-handle', plugin_dir_url( __FILE__ ) . '/js/color-picker.js', array( 'wp-color-picker' ), false, true );
+}
+add_action( 'admin_enqueue_scripts', 'color_picker_assets' );
+
+/*add_action( 'admin_enqueue_scripts', 'wcusp_add_color_picker' );
 function wcusp_add_color_picker( $hook ) {
  
 //if( is_admin() ) {
@@ -61,7 +70,7 @@ function wcusp_add_color_picker( $hook ) {
  
          wp_enqueue_script( 'color-picker-js', plugin_dir_url( __FILE__ ) . '/js/color-picker.js', array( 'wp-color-picker' ));
 //    }
-}
+}*/
 
 
 

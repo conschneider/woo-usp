@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: USPS underneath Add To Cart
+ * Plugin Name: Woo USP
  * Plugin URI: #
- * Description: This plugin adds a USP table underneath the add to cart button
+ * Description: This plugin allows you to display up to five unique selling propositions in you WooCommerce store.
  * Version: 1.0.0
  * Author: Anna Werner
  * Author URI: https://www.annawerner.de
