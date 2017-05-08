@@ -1,0 +1,39 @@
+
+div.product-usps-wrapper {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+    div.product-usps {
+        display: table;
+        height: 100%;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+        div.product-usp-block {
+            display: table-row;
+        }
+
+            .usp-image {
+                padding-right: 20px;
+                text-align: center;
+                width: 20%;
+                float: left;
+            }
+                .usp-image i.fa {font-size: 18px;}
+
+            .usp-title {
+                float: left;
+                width: 80%;
+            }
+
+                @media only screen and (max-width: 899px){
+                    .usp-title {
+                        padding-top: 0;
+                    }
+                }
