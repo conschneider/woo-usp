@@ -1,7 +1,7 @@
 <?php
 
 function wcusp_add_content () {
-
+	
     //Include Options
     $wcusp_options = get_option('wcusp_settings');
     //Remove Pipe from Icon Class
@@ -18,7 +18,7 @@ function wcusp_add_content () {
     //First USP  
     $my_first_usp = '<div class="product-usp-block">
                     	<div class="usp-image">
-                    		<i class="' . $wcusp_options_front['icon1'] . '"></i>
+                    		<i style="color:' . $wcusp_options['wcusp_icon_color'] . '" class="' . $wcusp_options_front['icon1'] . '"></i>
                     	</div>
                     	<div class="usp-title">
                     		<span> ' . $wcusp_options['usp1'] . ' </span> 
@@ -27,7 +27,7 @@ function wcusp_add_content () {
     //Second USP
     $my_second_usp = ' <div class="product-usp-block">
                     	<div class="usp-image">
-                    		<i class=" ' . $wcusp_options_front['icon2'] . ' "></i>
+                    		<i style="color:' . $wcusp_options['wcusp_icon_color'] . '" class=" ' . $wcusp_options_front['icon2'] . ' "></i>
                         </div>
                     	<div class="usp-title">
                     		<span> ' . $wcusp_options['usp2'] . ' </span> 
@@ -36,7 +36,7 @@ function wcusp_add_content () {
     //Third USP
     $my_third_usp = ' <div class="product-usp-block">
                     	<div class="usp-image">
-                    	   <i class=" ' . $wcusp_options_front['icon3'] . ' "></i>
+                    	   <i style="color:' . $wcusp_options['wcusp_icon_color'] . '" class=" ' . $wcusp_options_front['icon3'] . ' "></i>
                     	</div>
                     	<div class="usp-title">
                     	   	<span> ' . $wcusp_options['usp3'] . ' </span> 
@@ -45,7 +45,7 @@ function wcusp_add_content () {
     //Fourth USP
     $my_fourth_usp = ' <div class="product-usp-block">
                     	<div class="usp-image">
-                    		<i class=" ' . $wcusp_options_front['icon4'] . ' "></i>
+                    		<i style="color:' . $wcusp_options['wcusp_icon_color'] . '" class=" ' . $wcusp_options_front['icon4'] . ' "></i>
                     	</div>
                     	<div class="usp-title">
                     		<span> ' . $wcusp_options['usp4'] . ' </span> 
@@ -54,7 +54,7 @@ function wcusp_add_content () {
     //Fifth USP
     $my_fifth_usp = ' <div class="product-usp-block">
                         <div class="usp-image">
-                            <i class=" ' . $wcusp_options_front['icon5'] . ' "></i>
+                            <i style="color:' . $wcusp_options['wcusp_icon_color'] . '" class=" ' . $wcusp_options_front['icon5'] . ' "></i>
                         </div>
                         <div class="usp-title">
                             <span> ' . $wcusp_options['usp5'] . ' </span> 

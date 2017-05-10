@@ -111,8 +111,8 @@ function wcusp_options_page() {
 				<tr>
 		            <th scope="row"><label for="wcusp_icon_color"><?php echo __('Icon Color'); ?>: </label>
 		            </th>
-		            <td>
-		                <input name="wcusp_settings[wcusp_icon_color]" id="wcusp_icon_color" type="text" class="my-color-field" value="<?php if ( isset( $wcusp_options['wcusp_icon_color'] ) ) echo $wcusp_options['wcusp_icon_color']; ?>" />
+		            <td><input name="wcusp_settings[wcusp_icon_color]" id="wcusp_icon_color" type="text" class="my-input-class" value="<?php if ( isset( $wcusp_options['wcusp_icon_color'] ) ) echo $wcusp_options['wcusp_icon_color']; ?>" >
+		                <!-- <input name="wcusp_settings[wcusp_icon_color]" id="wcusp_icon_color" type="text" class="my-color-field" value="<?php if ( isset( $wcusp_options['wcusp_icon_color'] ) ) echo $wcusp_options['wcusp_icon_color']; ?>" />-->
 		            </td>
 		       </tr>
 			</table>
