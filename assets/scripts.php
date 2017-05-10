@@ -30,13 +30,7 @@ function wcusp_icon_picker_scripts() {
 }
 add_action( 'admin_enqueue_scripts', 'wcusp_icon_picker_scripts' );
 
-/*
-//Make sure we only enqueue on our options page //
-global $pagenow;
-if ($pagenow=="options-general.php" && isset( $_GET['page'] ) && $_GET['page'] == 'admin-options.php'  ) {
-add_action( 'admin_enqueue_scripts', 'wcusp_icon_picker_scripts' );
-}
-*/
+
 //Frontend
 
 function wcusp_frontend_icon_picker_scripts() {
@@ -53,24 +47,10 @@ add_action( 'wp_enqueue_scripts', 'wcusp_frontend_icon_picker_scripts' );
 function color_picker_assets($hook_suffix) {
     // $hook_suffix to apply a check for admin page.
     wp_enqueue_style( 'wp-color-picker' );
-    //wp_enqueue_script( 'my-script-handle', plugins_url('my-script.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
-//}
 	wp_enqueue_script( 'my-script-handle', plugin_dir_url( __FILE__ ) . '/js/color-picker.js', array( 'wp-color-picker' ), false, true );
 }
 add_action( 'admin_enqueue_scripts', 'color_picker_assets' );
 
-/*add_action( 'admin_enqueue_scripts', 'wcusp_add_color_picker' );
-function wcusp_add_color_picker( $hook ) {
- 
-//if( is_admin() ) {
- 
-        // Add the color picker css file
-   		wp_enqueue_style( 'wp-color-picker-css', plugin_dir_url( __FILE__ ) . '/css/icon-picker.css' );
- 
- 
-         wp_enqueue_script( 'color-picker-js', plugin_dir_url( __FILE__ ) . '/js/color-picker.js', array( 'wp-color-picker' ));
-//    }
-}*/
 
 
 
